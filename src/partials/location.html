@@ -1,0 +1,35 @@
+<div class="location">
+    <div class="location__content">
+        <ul class="location__nav-list">
+            <li class="location__nav-item">
+                <button type="button" class="location-button" data-modal-open>Our Locations
+                    <svg class="location__arrow location__arrow-white">
+                        <use href="./images/footer-icon.svg#icon-arow"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="location__nav-item">
+                <button type="button" class="location-franchise">Franchise
+                    <svg class="location__arrow location__arrow-red">
+                        <use href="./images/footer-icon.svg#icon-arow"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="location-backdrop is-hidden" data-modal>
+        <div class="location-modal">
+            <button type="button"  class="location-modal__button" data-modal-close>
+                <svg width="14" height="14">
+                    <use href="./images/mob-m-icons-2.svg#icon-close"></use>
+                </svg>
+            </button>
+            <map class="location-map" name="Ice-cream-locations">
+                <iframe
+                    src="https://www.google.com/maps/d/embed?mid=1ArO13u5BOHw9BSzyZnyXgMWWLEE6dna1" width="100%"
+                     frameborder="0" style="border: 0;" allowfullscreen></iframe>
+            </map>
+        </div>
+    </div>
+</div>
+<script src="./modal.js"></script>

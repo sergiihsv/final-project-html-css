@@ -1,0 +1,21 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+@import './base/null';
+@import './utils/colors';
+@import './utils/placeholders';
+@import './utils/mixin';
+@import './components/about';
+@import './components/advantages';
+@import './components/contacts';
+@import './components/customer-reviews';
+@import './components/location';
+@import './components/footer';
+@import './components/gallery';
+@import './components/header';
+@import './components/mobile-menu';
+@import './components/my-products';
+@import './components/btn-to-top';

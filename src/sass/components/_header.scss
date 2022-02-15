@@ -1,0 +1,366 @@
+.link {
+  text-decoration: none;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
+.list {
+  list-style: none;
+}
+.header-container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  position: relative;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+
+@keyframes changeOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.heading {
+  background-color: $primary-background-color;
+  overflow: hidden;
+  height: 502px;
+  @media screen and (min-width: 768px) {
+    height: 399px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 665px;
+  }
+}
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6px;
+  padding-bottom: 137px;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+    padding-bottom: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: -69px;
+    padding-bottom: 84px;
+  }
+}
+.header__wide-menu {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    z-index: 10;
+  }
+  li:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+.header__wide-menu--item {
+  @include text(DM Sans, 16px, 700, 1.31, 0.04em);
+  color: $main-text-color;
+}
+.header__middle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 25px;
+  }
+}
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.header__bottom--left {
+  display: flex;
+}
+.header__bottom--left-text {
+  display: block;
+  z-index: 10;
+  padding-top: 47px;
+  @media screen and (min-width: 1280px) {
+    padding-top: 56px;
+  }
+}
+.buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.header__hero {
+  height: 410px;
+  width: 171px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/header/hero-icecream-mobile-1x.png);
+  @media screen and (min-width: 767px) {
+    background-image: url(../images/header/hero-icecream-tablet-1x.png);
+  }
+  @media screen and (min-width: 1280px) {
+    top: 56px;
+    left: 149px;
+    height: 557px;
+    width: 236px;
+    background-image: url(../images/header/hero-icecream-desktop-1x.png);
+  }
+  position: absolute;
+  top: 9px;
+  left: 81px;
+
+  animation-name: changeOpacity;
+  animation-duration: 3500ms;
+}
+.logo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/header/logo-mobile-1x.png);
+  width: 199px;
+  height: 50px;
+  display: inline-block;
+}
+.button-burger {
+  background-color: transparent;
+  border: none;
+  fill: $primary-text-color;
+
+  background-image: url(../images/header/burger.svg);
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  z-index: 10;
+  @media screen and (min-width: 767px) {
+  margin-right: 30px;
+  }
+  @media screen and (min-width: 767px) {
+    top: 52px;
+    right: 224px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.header__text {
+  @include text(Titan One sans-serif, 26px, normal, 1.15, 0.04em);
+  font-family: 'Titan One', cursive;
+  color: $main-text-color;
+  text-transform: uppercase;
+  position: absolute;
+  top: 193px;
+  width: 218px;
+  z-index: 3;
+  @media screen and (min-width: 767px) {
+    position: static;
+    font-size: 22px;
+    width: 164px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 38px;
+    width: 277px;
+  }
+}
+.header__accent-text {
+  @include text(Titan One sans-serif, 48px, normal, 0.965, 0.04em);
+  font-family: 'Titan One', cursive;
+  color: $primary-text-color;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.circle {
+  width: 344px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: $secondary-text-color;
+  position: absolute;
+  top: 83px;
+  right: -60px;
+  z-index: 1;
+  @media screen and (min-width: 767px) {
+    right: 137px;
+    top: 31px;
+    width: 322px;
+    height: 322px;
+  }
+  @media screen and (min-width: 1280px) {
+    right: 267px;
+    top: 52px;
+    width: 538px;
+    height: 538px;
+  }
+}
+.header__buttons {
+  position: absolute;
+  top: 318px;
+  margin-bottom: 19px;
+  z-index: 2;
+  @media screen and (min-width: 767px) {
+    position: static;
+  }
+}
+.btn {
+  height: 24px;
+  border-radius: 20px;
+  border-color: transparent;
+  background-color: $main-text-color;
+  padding: 5px 15px;
+  color: $primary-text-color;
+  font-family: DM Sans;
+  font-size: 8px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition-property: color, background-color;
+  transition-duration: 350ms;
+  transition-timing-function: linear;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    height: 40px;
+  }
+  &:hover,
+  &:focus {
+    color: $main-text-color;
+    background-color: $primary-text-color;
+  }
+}
+.btn--buy {
+  display: none;
+  font-size: 16px;
+  font-weight: 700;
+  min-width: 160px;
+  height: 44px;
+  @media screen and (min-width: 767px) {
+    display: block;
+    z-index: 2;
+  }
+}
+.button-arrow-right {
+  /**background-image: url(../images/arrow-right.png);***/
+  background-size: cover;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  fill: #d41443;
+  background-position: center;
+  display: none;
+  @media screen and (min-width: 767px) {
+    margin-top: 7px;
+    display: block;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 20px;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $main-text-color;
+    background-color: $primary-text-color;
+  }
+}
+.header__many {
+  display: none;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+}
+.header__many--word {
+  @include text(DM Sans, 8px, normal, 1.25, 0.04em);
+  color: $main-text-color;
+  display: block;
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
+}
+.header__many--count {
+  @include text(Titan One, 28px, normal, 1.14, 0.04em);
+  color: $primary-text-color;
+  position: relative;
+  z-index: 10;
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+  }
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid $main-text-color;
+    border-radius: 50%;
+    background-color: $main-text-color;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    z-index: -1;
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+.header__milk {
+  display: none;
+  animation-name: changeOpacity;
+  animation-duration: 3500ms;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+}
+.milk__text {
+  display: none;
+  width: 114px;
+  @include text(DM Sans, 8px, normal, 1.5, 0.04em);
+  color: $main-text-color;
+
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    width: 200px;
+  }
+}
+.header__girl {
+  display: none;
+
+  z-index: 10;
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+}
+.header__girl--set {
+  z-index: 10;
+  padding-top: 5px;
+  animation-name: changeOpacity;
+  animation-duration: 3500ms;
+  @media screen and (min-width: 1280px) {
+    padding-top: 45px;
+  }
+}

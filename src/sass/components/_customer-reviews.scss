@@ -1,0 +1,245 @@
+.section-customers {
+  // max-width: 440px;
+
+  padding-top: 80px;
+  // padding-right: 20px;
+  padding-bottom: 170px;
+  // padding-left: 20px;
+}
+.customer-photo {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 29px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.abc {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: #fafafa;
+}
+.gradient {
+  position: absolute;
+  top: 71px;
+  right: 50px;
+  left: 50px;
+  bottom: 20px;
+
+  background: repeating-linear-gradient(
+    180deg,
+    #e1e1e1 0px,
+    #e1e1e1 1px,
+    #fafafa 1px,
+    #fafafa 30px
+  );
+}
+.reviews {
+  position: relative;
+  z-index: 5;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: #000000;
+
+  padding-top: 43px;
+  padding-right: 66px;
+  padding-bottom: 26px;
+  padding-left: 57px;
+}
+.customer-name {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.reviews::before {
+  content: '';
+  top: 28px;
+  left: 61px;
+  z-index: -1;
+  position: absolute;
+  display: block;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/customer-reviews/oi.png);
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.customer-name::before {
+  display: block;
+  content: '';
+
+  height: 4px;
+
+  background-image: url(../images/customer-reviews/point.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 18px;
+}
+// slider//////////////////////////////////
+.slick-track{
+ 
+  align-items: flex-start;
+}
+
+.slick-dots{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 30px;
+}
+.slick-dots li{
+  margin-right: 18px;
+  list-style: none;
+  
+}
+
+.slick-dots li button{
+  display: block;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  color:#D9D9D9 ;
+  border-radius: 50%;
+  border: none
+}
+ .slick-active button{
+  display: block;
+    background-image: url(../images/customer-reviews/home1.svg);
+    width: 12px;
+    height: 12px;
+    color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    // border-radius: 50%;
+    
+}
+
+@media screen and (min-width: 768px) {
+  .section-customers {
+    // max-width: 620px;
+    // width: 620px;
+    // margin-right: auto;
+    // margin-left: auto;
+    padding-top: 121px;
+    padding-bottom: 197px;
+  }
+  .customer-photo {
+    margin-bottom: 19px;
+  }
+
+  .abc {
+    margin-bottom: 24px;
+  }
+
+  .reviews {
+    font-size: 14px;
+    line-height: 2.16;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    padding-top: 47px;
+    padding-right: 80px;
+    padding-bottom: 34px;
+    padding-left: 80px;
+  }
+
+  .reviews::before {
+    content: '';
+    top: 30px;
+    left: 40px;
+    z-index: -1;
+  }
+
+  .gradient {
+    top: 76px;
+    right: 36px;
+    left: 60px;
+    bottom: 28px;
+
+    background: repeating-linear-gradient(
+      180deg,
+      #e1e1e1 0px,
+      #e1e1e1 1px,
+      #fafafa 1px,
+      #fafafa 29px
+    );
+  }
+  .customer-name {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+  .customer-name::before {
+    display: block;
+    content: '';
+    margin-bottom: 14px;
+  }
+
+
+  .slick-dots{
+    margin-top: 35px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section-customers {
+    // max-width: 926px;
+    // width: 926px;
+    padding-top: 123px;
+    padding-bottom: 234px;
+  }
+  .customer-photo {
+    margin-bottom: 15px;
+  }
+
+  .abc {
+    margin-bottom: 15px;
+  }
+  .reviews {
+    font-size: 16px;
+    line-height: 1.86;
+
+    padding-top: 47px;
+    padding-right: 89px;
+    padding-bottom: 39px;
+    padding-left: 87px;
+  }
+  .reviews::before {
+    top: 32px;
+    left: 50px;
+  }
+
+  .gradient {
+    top: 76px;
+    right: 54px;
+    left: 59px;
+    bottom: 32px;
+
+    background: repeating-linear-gradient(
+      180deg,
+      #e1e1e1 0px,
+      #e1e1e1 1px,
+      #fafafa 1px,
+      #fafafa 28.5px
+    );
+  }
+  .customer-name {
+    font-size: 20px;
+  }
+
+  .customer-name::before {
+    margin-bottom: 15px;
+  }
+}
